@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+  }
+  .left {
+    height: 98vh;
+    overflow-y: scroll;
+    width: 25vw;
+    border-radius: 10px;
+    margin: 8px 0 8px 8px;
+    background-color: #333333;
+  }
+  .right {
+    border-radius: 10px;
+    height: 95vh;
+    font-size: larger;
+    position: relative;
+    word-break: break-all;
+    padding: 10px;
+    color: #f4f4f4;
+    width: 71.5vw;
+    margin: 8px;
+    background-color: #333333;
+  }
+  .save {
+    background-color: #04ab9f;
+    width: 70px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    font-weight: bolder;
+    height: 30px;
+    font-size: large;
+    color: #f4f4f4;
+  }
+  .clear {
+    background-color: rgb(99, 46, 151);
+    cursor: pointer;
+    width: 70px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+    font-weight: bolder;
+    height: 30px;
+    font-size: large;
+    color: #f4f4f4;
+  }
+  .delete {
+    background-color: rgb(231, 31, 31);
+    cursor: pointer;
+    width: 70px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+    font-weight: bolder;
+    height: 30px;
+    font-size: large;
+    color: #f4f4f4;
+  }
+  .download:hover {
+    background-color: rgb(55, 177, 55);
+    transform: scale(1.1);
+  }
+  .download {
+    background-color: rgb(78, 155, 78);
+    cursor: pointer;
+    width: 70px;
+    text-decoration: underline;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+    font-weight: bolder;
+    height: 30px;
+    font-size: large;
+    color: #f4f4f4;
+  }
+  .btn {
+    position: absolute;
+    bottom: 1vh;
+    right: 1vw;
+  }
+  .confirm-delete {
+    position: absolute;
+    bottom: 4px;
+    right: 5px;
+  }
+  .title-save {
+    position: absolute;
+    bottom: 4px;
+    background-color: #04ab9f;
+    right: 5px;
+    cursor: pointer;
+    width: 70px;
+    border-radius: 10px;
+    border: none;
+    margin: 5px;
+    font-weight: bolder;
+    height: 30px;
+    font-size: large;
+    color: #f4f4f4;
+  }
+  .save:hover {
+    background-color: #04aa6d;
+    transform: scale(1.1);
+  }
+  .delete:hover {
+    background-color: red;
+    transform: scale(1.1);
+  }
+  .clear:hover {
+    background-color: rgb(77, 26, 129);
+    transform: scale(1.1);
+  }
+  .popup {
+    width: 500px;
+    height: 200px;
+    background-color: #333333;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+  }
+  .plus-icon {
+    background-color: #555555;
+    text-align: center;
+    width: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  .add {
+    display: flex;
+    margin: 10px 10px 10px 10px;
+    justify-content: space-between;
+    font-size: x-large;
+    font-weight: bolder;
+    color: #f4f4f4;
+  }
+  .plus-icon:hover {
+    background-color: #999999;
+  }
+  .notePad {
+    outline: none;
+    width: 70vw;
+    height: 85.2vh;
+    overflow-y: scroll;
+    border-radius: 10px;
+    background-color: #555555;
+    padding: 10px;
+  }
+  .confirm-clear {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  .cross {
+    position: absolute;
+    top: 4px;
+    opacity: 50%;
+    width: 25px;
+    right: 5px;
+    padding: 5px 8px 5px 8px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #999999;
+    border: none;
+    outline: none;
+    color: #f2f2f2;
+  }
+  .cross:hover {
+    opacity: 100%;
+  }
+  .heading {
+    margin: 40px 0px 0px 40px;
+  }
+  .title {
+    position: absolute;
+    outline: none;
+    width: 400px;
+    border-radius: 10px;
+    font-size: large;
+    padding: 10px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .author p {
+    font-size: medium;
+    margin-top: 1vh;
+    margin-left: 0.5vw;
+  }
+  .author h3 {
+    margin-left: 0.5vw;
+  }
+  .list-item {
+    color: #f2f2f2;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: larger;
+    background-color: #555555;
+    margin: 5px;
+    list-style: none;
+    word-break: break-all;
+  }
+  .list-item:hover {
+    background-color: #999999;
+  }
+  .selected-title {
+    background-color: #999999;
+  }
+  .message {
+    position: absolute;
+    padding: 20px 10px 0 10px;
+    top: 45%;
+    left: 50%;
+    width: 30vw;
+    transform: translate(-50%, -50%);
+  }
+  
+  @media only screen and (max-width: 360px) {
+    .container {
+      display: block;
+      height: 85.2vh;
+      padding-top: 2px;
+    }
+    .left {
+      height: 15vh;
+      overflow-x: scroll;
+      width: 97vw;
+    }
+    .right {
+      height: 66vh;
+      font-size: larger;
+      position: relative;
+      word-break: break-all;
+      padding: 4px;
+      width: 94vw;
+    }
+    .save {
+      width: 65px;
+      font-size: medium;
+    }
+    .clear {
+      width: 65px;
+      font-size: medium;
+    }
+    .delete {
+      width: 65px;
+      font-size: medium;
+    }
+    .download {
+      width: 65px;
+      font-size: medium;
+    }
+    .btn {
+      position: absolute;
+      bottom: 0.1vh;
+      right: 5vw;
+    }
+    .confirm-delete {
+      position: absolute;
+      bottom: 4px;
+      right: 5px;
+    }
+    .title-save {
+      position: absolute;
+      bottom: 4px;
+      background-color: #04ab9f;
+      right: 5px;
+      cursor: pointer;
+      width: 70px;
+      border-radius: 10px;
+      border: none;
+      margin: 5px;
+      font-weight: bolder;
+      height: 30px;
+      font-size: large;
+      color: #f4f4f4;
+    }
+    .popup {
+      width: 90vw;
+      height: 170px;
+    }
+    .notePad {
+      width: 88.6vw;
+      height: 58.2vh;
+    }
+    .confirm-clear {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+    }
+    .heading {
+      margin: 30px 0px 0px 30px;
+    }
+    .title {
+      width: 70vw;
+    }
+    .author {
+      display: none;
+    }
+    .message {
+      width: 70vw;
+      font-size: medium;
+    }
+  }
+  
